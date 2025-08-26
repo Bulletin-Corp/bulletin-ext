@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Bulletin - Student Capacity Tracker",
+  "version": "1.0.0",
+  "description": "Help teachers schedule assignments based on student workload capacity across all classes",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "identity",
+    "https://classroom.googleapis.com/*"
+  ],
+  "host_permissions": [
+    "https://classroom.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://classroom.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bulletin - Student Capacity Tracker"
+  },
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/classroom.courses.readonly",
+      "https://www.googleapis.com/auth/classroom.coursework.students.readonly",
+      "https://www.googleapis.com/auth/classroom.rosters.readonly"
+    ]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
