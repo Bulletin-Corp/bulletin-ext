@@ -27,7 +27,7 @@
     "default_title": "Bulletin - Student Capacity Tracker"
   },
   "oauth2": {
-    "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+    "client_id": "1003241219065-knqbqq6qvrtjuo9jpmrc4g9olirsf2oi.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/classroom.courses.readonly",
       "https://www.googleapis.com/auth/classroom.coursework.students.readonly",

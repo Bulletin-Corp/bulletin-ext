@@ -1,6 +1,6 @@
 # Bulletin - Student Capacity Tracker Chrome Extension
 
-A Chrome extension that helps teachers schedule assignments based on student workload capacity across all classes in Google Classroom.
+A Chrome extension that helps teachers schedule assignments based on student workload capacity across all classes in Google Classroom. Now with real Google Classroom API integration!
 
 ## Installation Steps
 
@@ -36,18 +36,29 @@ A Chrome extension that helps teachers schedule assignments based on student wor
 4. Click dropdown arrows next to student names to see detailed workload
 
 ## Features
-- ✅ Visual capacity indicators (green/yellow/red)
-- ✅ Weekly view of student workload
-- ✅ Detailed assignment breakdown by category
-- ✅ Real-time Google Classroom integration
-- ✅ Clean, professional UI matching your design specs
+- ✅ **Visual capacity indicators** (green/yellow/red)
+- ✅ **Weekly view of student workload**
+- ✅ **Detailed assignment breakdown by category**
+- ✅ **Real Google Classroom Integration** - Fetches actual student and assignment data
+- ✅ **Cross-Class Workload Analysis** - Shows student capacity across all their classes
+- ✅ **Smart caching** - Reduces API calls with 5-minute cache
+- ✅ **Fallback support** - Uses mock data if API fails
+- ✅ **Clean, professional UI** matching your design specs
 
 ## Files Included
 - `manifest.json` - Extension configuration
-- `background.js` - API handling and data processing
+- `background.js` - Service worker for API calls
 - `content.js` - UI injection into Google Classroom
 - `content.css` - Styling with Bulletin branding
 - `popup.html/js` - Extension popup interface
 - `options.html/js` - Settings and configuration page
 
-The extension is now ready to use! It will automatically appear when creating assignments in Google Classroom.
+## API Integration Features
+- **Real student data** from Google Classroom rosters
+- **Actual assignment data** with due dates and descriptions
+- **Cross-class workload calculation** for accurate capacity assessment
+- **Assignment categorization** (tests, essays, projects, homework)
+- **Smart caching system** to improve performance
+- **Comprehensive error handling** with fallback to mock data
+
+The extension uses real Google Classroom data to provide accurate student capacity insights across all their classes, helping teachers make informed scheduling decisions.
