@@ -6,11 +6,11 @@
   "permissions": [
     "activeTab",
     "storage",
-    "identity",
-    "https://classroom.googleapis.com/*"
+    "identity"
   ],
   "host_permissions": [
-    "https://classroom.google.com/*"
+    "https://classroom.google.com/*",
+    "https://classroom.googleapis.com/*"
   ],
   "background": {
     "service_worker": "background.js"
